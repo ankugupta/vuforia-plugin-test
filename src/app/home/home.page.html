@@ -1,0 +1,17 @@
+<div class="shell">
+  <div class="app">
+    <h1>Hello Vuforia!</h1>
+    <div id="deviceready" class="blink">
+      <button class="button" id="start-vuforia" (click)="startVuforia(true)">Click here to start Vuforia</button>
+      <button class="button" id="start-vuforia-with-no-overlay-text" (click)="startVuforia(true, undefined, null)">Click here to start Vuforia without overlay text</button>
+      <button class="button" id="start-and-stop-vuforia" (click)="startAndStop()">Click here to start Vuforia and attempt to stop it again after
+        5 seconds</button>
+      <button class="button" id="stop-vuforia" (click)="stopVuforia()">Click here to stop Vuforia</button>
+      <button class="button" id="start-vuforia-and-keep-open" (click)="startVuforia(false)">Click here to start Vuforia and keep it open when an
+        image is found</button>
+      <button class="button" id="start-vuforia-and-recognise-in-sequence" (click)="recognizeInSeq()">Click here to start Vuforia and recognise
+        targets in sequence</button>
+    </div>
+  </div>
+  <audio #myaudio src=""></audio>
+</div>
